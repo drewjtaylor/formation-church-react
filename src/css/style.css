@@ -1,0 +1,148 @@
+.text-primary-background {
+  color: #1D243B; }
+
+.text-primary-background-light {
+  color: #2C3659; }
+
+.text-secondary-color {
+  color: #255b69; }
+
+.text-primary-letter-color {
+  color: #FFF48F; }
+
+.text-primary-letter-color-dark {
+  color: #f8d962; }
+
+.bg-primary-background {
+  background-color: #1D243B; }
+
+.bg-primary-background-light {
+  background-color: #2C3659; }
+
+.bg-secondary-color {
+  background-color: #255b69; }
+
+.bg-primary-letter-color {
+  background-color: #FFF48F; }
+
+.bg-primary-letter-color-dark {
+  background-color: #f8d962; }
+
+.primary-font {
+  font-family: "Staatliches", cursive; }
+
+.style-font {
+  font-family: "Lemonada", cursive; }
+
+.tertiary-font {
+  font-family: "Caveat", cursive; }
+
+.jumbotron a {
+  color: inherit;
+  text-decoration: none; }
+
+/* Made this to style the page a little bit. It essentially makes a skewed box behind everything else at the top. */
+.diagonal-box-slant-left {
+  background-color: #1D243B;
+  transform: skewY(-4deg);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 400px;
+  z-index: -1; }
+
+@media (min-width: 1400px) {
+  .diagonal-box-slant-left {
+    transform: skewY(-2deg);
+    height: 970px; } }
+
+/* Makes background of jumbotron gradient-colored */
+.jumbotron {
+  background-image: linear-gradient(to bottom right, #1D243B, 20%, #255b69, 80%, #f8d962);
+  color: #FFF48F; }
+
+.navbar {
+  background-color: #1D243B; }
+
+/* Custom nav-bar text color */
+.nav-bar-link {
+  color: #FFF48F; }
+
+/* Navbar drop down menus are inverse of navbar */
+.navbar-dropdown-inverse {
+  background-color: #FFF48F;
+  color: #1D243B; }
+
+/* Darkens the links on hover to be a little more intuitive what's clickable/active  */
+.nav-bar-link:hover {
+  color: #f8d962; }
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+  background-color: #255b69;
+  color: #FFF48F; }
+
+/* This makes the font-awesome things in the logo behave responsively */
+.title-logo {
+  font-size: calc(1.525rem + 5vw); }
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 4rem; } }
+
+/* These were found on stack overflow to make varying image heights appear as the same heigh in the carousel */
+/* Without this, the images were different heights and the whole page would shift when it rotated */
+/* https://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different-height-images-cause-bouncing-arrows */
+.carousel-item {
+  width: 100%;
+  /*width you want*/
+  height: 600px;
+  /*height you want*/
+  overflow: hidden; }
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/* These cause the carousel to not take up space in the page, allowing the next text to appear behind it. */
+/* For making the first letter of a paragraph bigger. Add "subhead" to the class of the whole element. */
+.subhead::first-letter {
+  font-size: 200%; }
+
+/* For making elements fade in on scroll using intersection observer*/
+/* Make sure the js is linked as well for this to work */
+/* Reference: https://www.youtube.com/watch?v=huVJW23JHKQ */
+.fade-in {
+  opacity: 0;
+  position: relative;
+  right: 100px;
+  transition: all 500ms ease-in; }
+
+.fade-in.appear {
+  opacity: 1;
+  position: relative;
+  right: 0px; }
+
+.dark-box {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.light-box {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.form-label {
+  font-weight: bold; }
+
+  /* 
+.parallax {
+  The image used
+  background-image: url("../img/assist-tampa-600x401.jpg");
+  
+  Set a specific height
+  min-height: 400px;
+  
+  Create the parallax scrolling effect
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+ */
