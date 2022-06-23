@@ -11,7 +11,7 @@ const Jumbotron = () => {
                     </Col>
 
                     <Col>
-                        <h1>Formed Church</h1>
+                        <h1>Formation Church</h1>
                         <h4 className="d-none d-sm-block">Christ-centered, Community-focused</h4>
                     </Col>
                 </Row>
