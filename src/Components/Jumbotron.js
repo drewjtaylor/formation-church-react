@@ -1,20 +1,21 @@
 import CrossGreaterThan from "../fontawesomeicons/CrossGreaterThan";
-
+import {Container, Row, Col } from 'reactstrap';
 
 const Jumbotron = () => {
     return (
         <header className="jumbotron jumbotron-fluid mb-0 primary-font">
-            <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-4 col-sm-3 align-self-center title-logo">
+            <Container>
+                <Row className="align-items-center">
+                    <Col xs='4' sm='3' className="align-self-center title-logo">
                         <CrossGreaterThan />
-                    </div>
-                    <div className="col">
+                    </Col>
+
+                    <Col>
                         <h1>Formed Church</h1>
                         <h4 className="d-none d-sm-block">Christ-centered, Community-focused</h4>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </header>
     )
 };
