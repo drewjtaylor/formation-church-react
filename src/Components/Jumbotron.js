@@ -1,7 +1,21 @@
+import CrossGreaterThan from "../fontawesomeicons/CrossGreaterThan";
+
 
 const Jumbotron = () => {
     return (
-        <h1>This is a jumbotron</h1>
+        <header className="jumbotron jumbotron-fluid mb-0 primary-font">
+        <div className="container">
+            <div className="row">
+                <div className="col-4 col-sm-3 align-self-center title-logo">
+                    <CrossGreaterThan />
+                </div>
+                <div className="col">
+                <h1>Formed Church</h1>
+                <h4 className="d-none d-sm-block">Christ-centered, Community-focused</h4>
+                </div>
+            </div>
+        </div>
+    </header>
     )
 };
 
