@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {Row, Col, Container,} from 'reactstrap';
 
 const Footer = () => {
@@ -17,37 +18,24 @@ const Footer = () => {
                                 <li><a href="/contactus.html"> Contact</a></li>
                             </ul>
                         </div>
-                        <Col xs='6' sm='3' className='text-center'>
-                            <h5>Social</h5>
-                            <a
-                                className='btn btn-social-icon btn-instagram'
-                                href='http://instagram.com/'
-                            >
-                                <FontAwesomeIcon icon={faInstagram} />
-                                {/* <i className='fa fa-instagram' /> */}
-                            </a>{' '}
-                            <a
-                                className='btn btn-social-icon btn-facebook'
-                                href='http://www.facebook.com/'
-                            >
-                                <FontAwesomeIcon icon={faFacebook}/>
-                            </a>{' '}
-                            <a
-                                className='btn btn-social-icon btn-twitter'
-                                href='http://twitter.com/'
-                            >
-                                <FontAwesomeIcon icon={faTwitter} />
-                            </a>{' '}
-                            <a
-                                className='btn btn-social-icon btn-google'
-                                href='http://youtube.com/'
-                            >
-                                <FontAwesomeIcon icon={faYoutube} />
-                            </a>
-                    </Col>
+                            <Col xs='6' sm='3' className='text-center'>
+                                <h5>Social</h5>
+                                <a className='btn btn-social-icon btn-instagram' href='http://instagram.com/'>
+                                    <FontAwesomeIcon icon={faInstagram} />
+                                </a>{' '}
+                                <a className='btn btn-social-icon btn-facebook' href='http://www.facebook.com/'>
+                                    <FontAwesomeIcon icon={faFacebook}/>
+                                </a>{' '}
+                                <a className='btn btn-social-icon btn-twitter' href='http://twitter.com/'>
+                                    <FontAwesomeIcon icon={faTwitter} />
+                                </a>{' '}
+                                <a className='btn btn-social-icon btn-google' href='http://youtube.com/'>
+                                    <FontAwesomeIcon icon={faYoutube} />
+                                </a>
+                            </Col>
                         <div className="col-md-4 text-center">
-                            <a role="button" className="btn btn-link" href="tel:+17275551234"><i className="fa fa-phone"></i></a> 1-727-555-1234<br />
-                            <a role="button" className="btn btn-link" href="mailto:notarealemail@formedchurch.com"><i className="fa-solid fa-envelope"></i></a> notarealemail@formedchurch.com
+                            <a role="button" className="btn btn-link" href="tel:+17275551234"><FontAwesomeIcon icon={faPhone} /></a> 1-727-555-1234<br />
+                            <a role="button" className="btn btn-link" href="mailto:notarealemail@formedchurch.com"><FontAwesomeIcon icon={faEnvelope} /> notarealemail@formedchurch.com </a>
                         </div>
                     </Row>
                 </Container>
