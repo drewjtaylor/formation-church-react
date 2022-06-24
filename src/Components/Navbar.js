@@ -35,7 +35,7 @@ const ChurchNavbar = () => {
                             <DropdownToggle nav caret>
                             Who we are
                             </DropdownToggle>
-                            <DropdownMenu right>
+                            <DropdownMenu end>
                                 <DropdownItem>
                                     Why "Formation Church?"
                                 </DropdownItem>
@@ -54,7 +54,7 @@ const ChurchNavbar = () => {
                             <DropdownToggle nav caret>
                             Let's Connect
                             </DropdownToggle>
-                            <DropdownMenu right>
+                            <DropdownMenu end>
                                 <DropdownItem>
                                     Church Gatherings
                                 </DropdownItem>
@@ -67,7 +67,7 @@ const ChurchNavbar = () => {
                             <DropdownToggle nav caret>
                             Resources
                             </DropdownToggle>
-                            <DropdownMenu right>
+                            <DropdownMenu end>
                                 <DropdownItem>
                                     Book Club Guide
                                 </DropdownItem>
