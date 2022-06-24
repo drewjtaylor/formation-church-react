@@ -35,7 +35,7 @@ const Footer = () => {
                             </Col>
                         <div className="col-md-4 text-center">
                             <a role="button" className="btn btn-link" href="tel:+17275551234"><FontAwesomeIcon icon={faPhone} /></a> 1-727-555-1234<br />
-                            <a role="button" className="btn btn-link" href="mailto:notarealemail@formedchurch.com"><FontAwesomeIcon icon={faEnvelope} /> notarealemail@formedchurch.com </a>
+                            <a role="button" className="btn btn-link" href="mailto:notarealemail@formedchurch.com"><FontAwesomeIcon icon={faEnvelope} />{' '}notarealemail@formedchurch.com </a>
                         </div>
                     </Row>
                 </Container>
