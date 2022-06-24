@@ -9,8 +9,7 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem,
-    Container
+    DropdownItem
 } from 'reactstrap';
 
 import {useState} from 'react';
@@ -25,7 +24,6 @@ const ChurchNavbar = () => {
 
     return (
         <>
-            <Container>
                 <Navbar color="light" light expand="md">
                 <NavbarBrand href="/"><CrossGreaterThan/></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
@@ -82,7 +80,6 @@ const ChurchNavbar = () => {
                         </Nav>
                     </Collapse>
                 </Navbar>
-            </Container>
         </>
     )
 };
