@@ -23,7 +23,7 @@ const Footer = () => {
                                 <a className='btn btn-social-icon btn-instagram' href='http://instagram.com/'>
                                     <FontAwesomeIcon icon={faInstagram} />
                                 </a>{' '}
-                                <a className='btn btn-social-icon btn-facebook' href='http://www.facebook.com/'>
+                                <a className='btn btn-social-icon btn-facebook' href='https://www.facebook.com/ourformationchurch/'>
                                     <FontAwesomeIcon icon={faFacebook}/>
                                 </a>{' '}
                                 <a className='btn btn-social-icon btn-twitter' href='http://twitter.com/'>
