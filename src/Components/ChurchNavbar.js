@@ -11,10 +11,9 @@ import {
     DropdownMenu,
     DropdownItem
 } from 'reactstrap';
-
+import logo from '../img/FLogo.jpg';
 import {useState} from 'react';
 
-import CrossGreaterThan from '../fontawesomeicons/CrossGreaterThan';
 
 const ChurchNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +24,7 @@ const ChurchNavbar = () => {
     return (
         <>
                 <Navbar color="light" light expand="md">
-                <NavbarBrand href="/"><CrossGreaterThan/></NavbarBrand>
+                <NavbarBrand href="/"><img className='navbar-logo' src={logo} /></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto" navbar>

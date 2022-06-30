@@ -1,4 +1,3 @@
-import CrossGreaterThan from "../fontawesomeicons/CrossGreaterThan";
 import logo from '../../src/img/F-symbol-white.png';
 import {Container, Row, Col } from 'reactstrap';
 
@@ -8,7 +7,7 @@ const Jumbotron = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs='4' sm='3' className="align-self-center">
-                        <img src={logo} />
+                        <img className='jumbotron-logo' src={logo} />
                     </Col>
 
                     <Col>
