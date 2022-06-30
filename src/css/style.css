@@ -41,24 +41,10 @@
   color: inherit;
   text-decoration: none; }
 
-/* Made this to style the page a little bit. It essentially makes a skewed box behind everything else at the top. */
-.diagonal-box-slant-left {
-  background-color: #1D243B;
-  transform: skewY(-4deg);
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 400px;
-  z-index: -1; }
-
-@media (min-width: 1400px) {
-  .diagonal-box-slant-left {
-    transform: skewY(-2deg);
-    height: 970px; } }
 
 /* Makes background of jumbotron gradient-colored */
 .jumbotron {
-  background-image: linear-gradient(to bottom right, #1D243B, 20%, #255b69, 80%, #f8d962);
+  background-image: linear-gradient(to bottom right, #000000, 20%, #255b69, 80%, #ffffff);
   color: #FFF48F; }
 
 .navbar {
@@ -80,10 +66,6 @@
 .navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
   background-color: #255b69;
   color: #FFF48F; }
-
-/* This makes the font-awesome things in the logo behave responsively */
-.title-logo {
-  font-size: calc(1.525rem + 5vw); }
 
 @media (min-width: 1200px) {
   .title {
