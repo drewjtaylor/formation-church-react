@@ -1,5 +1,5 @@
 import Jumbotron from './Jumbotron';
-import ChurchNavbar from './Navbar';
+import ChurchNavbar from './ChurchNavbar';
 
 const Header = () => {
     return (
