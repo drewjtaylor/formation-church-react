@@ -23,7 +23,7 @@ const ChurchNavbar = () => {
 
     return (
         <>
-                <Navbar color="light" light expand="md">
+                <Navbar color="light" light sticky='top' expand="md">
                 <NavbarBrand href="/"><img className='navbar-logo' src={logo} /></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
@@ -34,32 +34,32 @@ const ChurchNavbar = () => {
                             </DropdownToggle>
                             <DropdownMenu end>
                                 <NavItem>
-                                    <NavLink className='nav-link' to='WhyFormationChurch'>
-                                        <DropdownItem>
-                                            Why "Formation Church?"
-                                        </DropdownItem>
-                                    </NavLink>
+                                    <DropdownItem>
+                                        <NavLink className='nav-link' to='WhyFormationChurch'>
+                                            Why "Formation Church"
+                                        </NavLink>
+                                    </DropdownItem>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='LeadershipAndStaff'>
-                                        <DropdownItem>
+                                    <DropdownItem>
+                                        <NavLink className="nav-link" to='LeadershipAndStaff'>
                                             Leadership and Staff
-                                        </DropdownItem>
-                                    </NavLink>
+                                        </NavLink>
+                                    </DropdownItem>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='WhatWeBelieve'>
-                                        <DropdownItem>
+                                    <DropdownItem>
+                                        <NavLink className="nav-link" to='WhatWeBelieve'>
                                             What We Believe
-                                        </DropdownItem>
-                                    </NavLink>
+                                        </NavLink>
+                                    </DropdownItem>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='OurMission'>
-                                        <DropdownItem>
+                                    <DropdownItem>
+                                        <NavLink className="nav-link" to='OurMission'>
                                             Our Mission
-                                        </DropdownItem>
-                                    </NavLink>
+                                        </NavLink>
+                                    </DropdownItem>
                                 </NavItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
