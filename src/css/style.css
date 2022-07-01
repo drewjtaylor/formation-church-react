@@ -37,15 +37,11 @@
 .tertiary-font {
   font-family: "Caveat", cursive; }
 
-.jumbotron a {
-  color: inherit;
-  text-decoration: none; }
-
 
 /* Makes background of jumbotron gradient-colored */
 .jumbotron {
-  background-image: linear-gradient(to bottom right, #000000, 20%, #255b69, 80%, #ffffff);
-  color: #FFF48F; }
+  background-image: linear-gradient(to bottom right, #000000, 80%, #ffffff);
+  color: #ffffff; }
 
 .navbar {
   background-color: #1D243B; }
@@ -129,10 +125,24 @@
   background-size: cover; }
  */
 
- .jumbotron-logo {
+
+/* ----------Everything above this line is from the basic bootstrap project---------- */
+
+.jumbotron-logo {
     height: 5em;
  }
 
- .navbar-logo {
+.navbar-logo {
     height: 2em;
  }
+
+
+/* These two stop the navbar links from being blue/underline */
+.unstyled-link {
+    text-decoration: none;
+    color: inherit
+}
+
+.unstyled-link:hover {
+    color: inherit
+}
