@@ -7,7 +7,7 @@ const Jumbotron = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs='4' sm='3' className="align-self-center">
-                        <img className='jumbotron-logo' src={logo} />
+                        <img className='jumbotron-logo' src={logo} alt='F for formation church'/>
                     </Col>
 
                     <Col>
