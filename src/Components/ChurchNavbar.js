@@ -17,49 +17,49 @@ import { NavLink } from 'react-router-dom';
 
 const ChurchNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const toggle = (isOpen) => {
+    const toggle = () => {
         setIsOpen(!isOpen)
-    }
+    };
 
     return (
         <>
                 <Navbar color="light" light sticky='top' expand="md">
                 <NavbarBrand href="/"><img className='navbar-logo' src={logo} /></NavbarBrand>
-                <NavbarToggler onClick={toggle} />
+                <NavbarToggler onClick={() => toggle()} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
-                            Who we are
+                                Who we are
                             </DropdownToggle>
                             <DropdownMenu end>
                                 <NavItem>
-                                    <DropdownItem>
-                                        <NavLink className='nav-link' to='WhyFormationChurch'>
+                                    <NavLink className='nav-link' to='WhyFormationChurch'>
+                                        <DropdownItem>
                                             Why "Formation Church"
-                                        </NavLink>
-                                    </DropdownItem>
+                                        </DropdownItem>
+                                    </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <DropdownItem>
-                                        <NavLink className="nav-link" to='LeadershipAndStaff'>
+                                    <NavLink className="nav-link" to='LeadershipAndStaff'>
+                                        <DropdownItem>
                                             Leadership and Staff
-                                        </NavLink>
-                                    </DropdownItem>
+                                        </DropdownItem>
+                                    </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <DropdownItem>
-                                        <NavLink className="nav-link" to='WhatWeBelieve'>
+                                    <NavLink className="nav-link" to='WhatWeBelieve'>
+                                        <DropdownItem>
                                             What We Believe
-                                        </NavLink>
-                                    </DropdownItem>
+                                        </DropdownItem>
+                                    </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <DropdownItem>
-                                        <NavLink className="nav-link" to='OurMission'>
+                                    <NavLink className="nav-link" to='OurMission'>
+                                        <DropdownItem>
                                             Our Mission
-                                        </NavLink>
-                                    </DropdownItem>
+                                        </DropdownItem>
+                                    </NavLink>
                                 </NavItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
@@ -90,13 +90,13 @@ const ChurchNavbar = () => {
                             </DropdownToggle>
                             <DropdownMenu end>
                                 <DropdownItem>
-                                    Book Club Guide
+                                    <a href="https://formed-church.netlify.app/That-Man-Called-Jesus.pdf">Book Club Guide</a>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    <a href="https://www.biblegateway.com/" className='unstyled-link'>Read the Bible Online</a>
+                                    <a href="https://www.biblegateway.com/" className='unstyled-link' target='_blank'>Read the Bible Online</a>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    <a href="https://assistcx.org/" className='unstyled-link'><strong>Assist</strong> Church Expansion Ministry</a>
+                                    <a href="https://assistcx.org/" className='unstyled-link' target='_blank'><strong>Assist</strong> Church Expansion Ministry</a>
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
