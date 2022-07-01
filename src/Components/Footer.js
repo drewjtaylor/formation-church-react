@@ -15,8 +15,8 @@ const Footer = () => {
                             <h5>Links</h5>
                             <ul className="list-unstyled">
                                 <li><Link to="/"> Home</Link></li>
-                                <li><a href="/aboutus.html"> About</a></li>
-                                <li><a href="/contactpage.html"> Contact</a></li>
+                                <li><Link to="/churchgatherings"> Meeting times</Link></li>
+                                <li><Link to="/contactpage"> Contact Us</Link></li>
                             </ul>
                         </div>
                             <Col xs='6' sm='3' className='text-center'>
