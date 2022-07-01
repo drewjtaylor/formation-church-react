@@ -61,7 +61,7 @@
 
 .navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
   background-color: #255b69;
-  color: #FFF48F; }
+  color: #ffffff; }
 
 @media (min-width: 1200px) {
   .title {
@@ -146,3 +146,5 @@
 .unstyled-link:hover {
     color: inherit
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lemonada&family=Staatliches&display=swap');
