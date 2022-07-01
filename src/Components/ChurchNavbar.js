@@ -69,13 +69,20 @@ const ChurchNavbar = () => {
                             </DropdownToggle>
                             <DropdownMenu end>
                                 <NavItem>
+                                    <NavLink className="nav-link" to='events'>
+                                        <DropdownItem>
+                                            Events
+                                        </DropdownItem>
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                <NavItem>
                                     <NavLink className="nav-link" to='ChurchGatherings'>
                                         <DropdownItem>
                                             Church Gatherings
                                         </DropdownItem>
                                     </NavLink>
                                 </NavItem>
-                                <NavItem>
                                     <NavLink className="nav-link" to='ContactPage'>
                                         <DropdownItem>
                                             Contact Us
