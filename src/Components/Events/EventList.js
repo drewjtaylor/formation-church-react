@@ -3,7 +3,7 @@ import {Card, CardTitle, CardSubtitle, CardBody, CardText} from 'reactstrap';
 const EventList = ({events}) => {
     return (
         events.map((event) => {
-            return <Card>
+            return <Card key={event.id}>
                 <CardBody>
                     <CardTitle>{event.title}</CardTitle>
                     <CardSubtitle>Add date here later</CardSubtitle>

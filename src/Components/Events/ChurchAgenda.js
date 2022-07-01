@@ -1,5 +1,5 @@
 import AddEventForm from "./AddEventForm";
-import EventList from './EventList';
+import EventList from '../EventList';
 import {Container, Row, Col} from 'reactstrap';
 
 
