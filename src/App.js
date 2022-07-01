@@ -9,6 +9,8 @@ import OurMissionPage from './Pages/OurMission';
 import WhatWeBelievePage from './Pages/WhatWeBelieve';
 import WhyFormationChurchPage from './Pages/WhyFormationChurch';
 
+
+
 function App() {
   return (
     <div className="App">
@@ -20,7 +22,7 @@ function App() {
                 <Route path='whatwebelieve' element={<WhatWeBelievePage />} />
                 <Route path='ourmission' element={<OurMissionPage />} />
                 <Route path='churchgatherings' element={<ChurchGatheringsPage />} />
-                <Route path='contactus' element={<ContactPage />} />
+                <Route path='contactpage' element={<ContactPage />} />
             </Routes>
         <Footer />
     </div>
