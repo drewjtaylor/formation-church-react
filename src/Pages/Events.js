@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import ChurchAgenda from "../Components/ChurchAgenda";
-import AddEventForm from "../Components/AddEventForm";
+import EventList from "../Components/Events/EventList";
+import AddEventForm from "../Components/Events/AddEventForm";
 import demoEvents from "../demoData/demoEvents";
 
 const Events = () => {
@@ -17,7 +17,9 @@ const Events = () => {
             <p>If you would like to add an event, please enter the information in the form on the right</p>
                 <Row>
                     <Col>
-                        <ChurchAgenda events={eventList} />
+                        <div className='overflow-auto'>
+                            <EventList events={eventList}/>
+                        </div>
                     </Col>
                     <Col>
                         <AddEventForm />
