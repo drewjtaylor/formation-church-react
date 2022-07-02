@@ -1,6 +1,6 @@
 const demoEvents = [
     {
-        id: 0,
+        id: 1,
         datetime: {
             year: 2022,
             month: 6,
@@ -12,7 +12,7 @@ const demoEvents = [
         description: 'Bring a snack and your favorite game. This event is hosted by the youth group, but everyone is invited. Whether your game is checkers, Catan, or Axis & Allies, there\'s something for you'
     },
     {
-        id: 1,
+        id: 2,
         datetime: {
             year: 2022,
             month: 6,
@@ -24,7 +24,7 @@ const demoEvents = [
         description: 'Bring a main dish and a dessert. Crock pots can be left in the learning center. Drinks will be provided. Any help setting up chairs at 12:30 would be much appreciated!'
     },
     {
-        id: 2,
+        id: 3,
         datetime: {
             year: 2022,
             month: 6,
@@ -38,7 +38,6 @@ const demoEvents = [
 ];
 
 export default demoEvents;
-
 
 
 // 5 numbers for new Date() specifies year, month(0-indexed), day (not 0-indexed), hour, and minute

@@ -13,6 +13,7 @@ import {
 import logo from '../img/FLogo.jpg';
 import {useState} from 'react';
 import { NavLink } from 'react-router-dom';
+import UserLoginForm from '../user/UserLoginForm';
 
 
 const ChurchNavbar = () => {
@@ -94,6 +95,7 @@ const ChurchNavbar = () => {
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         </Nav>
+                        <UserLoginForm />
                     </Collapse>
                 </Navbar>
         </>

@@ -1,5 +1,5 @@
 import demoEvents from "../../demoData/demoEvents";
-import { createSlice } from "@reduxjs/toolkit/dist/createSlice";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     eventsArray: demoEvents
