@@ -1,4 +1,5 @@
 import logo from '../../src/img/F-symbol-white.png';
+import { Link } from 'react-browser-router';
 import {Container, Row, Col } from 'reactstrap';
 
 const Jumbotron = () => {
@@ -7,7 +8,7 @@ const Jumbotron = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs='4' sm='3' className="align-self-center">
-                        <img className='jumbotron-logo' src={logo} alt='F for formation church'/>
+                        <Link to='/'><img className='jumbotron-logo' src={logo} alt='F for formation church'/></Link>
                     </Col>
 
                     <Col>
