@@ -8,35 +8,29 @@ const MainCarousel = () => {
 
     return (
         <>
-            <Carousel fade controls={false} interval={4000}>
+            <Carousel fade controls={false} interval={150000} wrap={false}>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
                     src={slideOne}
-                    alt="First slide"
+                    alt="a small group singing"
                     />
                     <Carousel.Caption>
-                    <h3></h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
                     src={slideTwo}
-                    alt="Second slide"
+                    alt="sunset at the beach"
                     />
-
-                    <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
                     src={slideThree}
-                    alt="Third slide"
+                    alt="Formation church"
                     />
 
                 </Carousel.Item>
