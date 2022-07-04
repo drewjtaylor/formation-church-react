@@ -7,16 +7,15 @@ import { Button, Label, FormGroup } from 'reactstrap';
 import {addEvent} from './eventSlice';
 
 const AddEventForm = () => {
-    const [eventDate, seteventDate] = useState (new Date())
+    const [eventDate, seteventDate] = useState(new Date())
 
     const dispatch = useDispatch();
 
     const handleEventSubmit = (values) => {
         const newEvent = {
             date: values.date,
-            time: values.time,
-            title: values.title,
-            description: values.description
+            description: values.description,
+            title: values.title
         };
 
         console.log(values);
