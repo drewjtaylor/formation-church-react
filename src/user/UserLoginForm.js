@@ -26,6 +26,8 @@ const UserLoginForm = () => {
             password: values.password
         };
 
+        console.log("login submit fired")
+
         dispatch(setCurrentUser(currentUser));
         setLoginModalOpen(false);
     };

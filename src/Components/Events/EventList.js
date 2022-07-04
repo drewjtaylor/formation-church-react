@@ -1,8 +1,13 @@
 import {Card, CardTitle, CardSubtitle, CardBody, CardText} from 'reactstrap';
+import { SelectAllEvents } from './eventSlice';
+import { useSelector } from 'react-redux';
 
-const EventList = ({events}) => {
+
+const EventList = () => {  
+    const allEvents = useSelector(SelectAllEvents);
+
     return (
-        events.map((event) => {
+        allEvents.map((event) => {
             return <Card key={event.id}>
                 <CardBody>
                     <CardTitle>{event.title}</CardTitle>
@@ -13,5 +18,6 @@ const EventList = ({events}) => {
         })
     )
 };
+
 
 export default EventList;

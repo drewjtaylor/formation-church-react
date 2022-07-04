@@ -23,4 +23,4 @@ export const eventsReducer = eventsSlice.reducer;
 
 export const { addEvent } = eventsSlice.actions;
 
-export const SelectAllEvents = (state) => state.vents.eventsArray;
+export const SelectAllEvents = (state) => state.events.eventsArray;

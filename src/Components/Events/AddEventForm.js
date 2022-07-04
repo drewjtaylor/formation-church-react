@@ -14,6 +14,7 @@ const AddEventForm = () => {
     const handleEventSubmit = (values) => {
         const newEvent = {
             date: values.date,
+            time: values.time,
             title: values.title,
             description: values.description
         };
@@ -25,8 +26,8 @@ const AddEventForm = () => {
 
     return (
         <>
-            <p>This is the add event form</p>
-            <Formik initialValues={{}} onSubmit={handleEventSubmit} validate={validateEventForm}>
+            <p>If you would like to add an event, Fill out the date and title, add an optional description, then click "Add event to calendar"</p>
+            <Formik initialValues={{}} onSubmit={handleEventSubmit} >
                 <Form>
                     <FormGroup>
                         <Label htmlFor='date'>Date/Time</Label>
