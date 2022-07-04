@@ -14,7 +14,7 @@ const eventsSlice = createSlice({
                 id: state.eventsArray.length+1,
                 ...action.payload,
             };
-            state.commentsArray.push(newEvent);
+            state.eventsArray.push(newEvent);
         }
     }
 })
@@ -22,3 +22,5 @@ const eventsSlice = createSlice({
 export const eventsReducer = eventsSlice.reducer;
 
 export const { addEvent } = eventsSlice.actions;
+
+export const SelectAllEvents = (state) => state.vents.eventsArray;
