@@ -8,10 +8,13 @@ const EventList = () => {
 
     return (
         allEvents.map((event) => {
+            const displayDate = event.date.toDateString();
+            const displayTime = event.date.toLocaleTimeString();
+
             return <Card key={event.id}>
                 <CardBody>
                     <CardTitle>{event.title}</CardTitle>
-                    <CardSubtitle>Date goes here</CardSubtitle>
+                    <CardSubtitle>{displayDate} {displayTime}</CardSubtitle>
                     <CardText>{event.description}</CardText>
                 </CardBody>
             </Card>
