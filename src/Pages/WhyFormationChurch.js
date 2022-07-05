@@ -25,6 +25,9 @@ const WhyFormationChurchPage = () => {
         <CardImgLeft cardInfo={firstCard} />
         <h1 className='style-font text-center mt-5'>So why "Formation Church?"</h1>
         <CardImgRight cardInfo={secondCard}/>
+        <div className="text-center style-font mt-3">
+            <h5>"Your hands made me and formed me; give me understanding to learn your commands.</h5><h5> (<a href="https://www.biblegateway.com/passage/?search=Psalm%20119%3A73&version=NIV">NIV, Psalm 119:73</a>)"</h5>
+        </div>
     </Container>
 }
 
