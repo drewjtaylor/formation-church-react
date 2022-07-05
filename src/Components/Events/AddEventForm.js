@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import DatePicker from 'react-datepicker';
 import DatePickerField from './DatePickerField';
 import {useSelector, useDispatch} from 'react-redux';
 import {Formik, Field, Form, ErrorMessage} from 'formik';
@@ -31,7 +30,7 @@ const AddEventForm = () => {
                 <Form>
                     <FormGroup>
                         <Label htmlFor='date'>Date:</Label>
-                        <DatePickerField name='date' />
+                        <DatePickerField name='date' className='form-control'/>
                         <ErrorMessage name='date' >
                                 {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage>
