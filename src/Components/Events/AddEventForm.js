@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import DatePicker from 'react-datepicker';
+// import DatePicker from 'react-datepicker';
+import DatePickerField from './DatePickerField';
 import {useSelector, useDispatch} from 'react-redux';
 import {Formik, Field, Form, ErrorMessage} from 'formik';
 import { validateEventForm } from '../../utils/validateEventForm';
@@ -29,8 +30,8 @@ const AddEventForm = () => {
             <Formik initialValues={{}} onSubmit={handleEventSubmit} >
                 <Form>
                     <FormGroup>
-                        <Label htmlFor='date'>Date/Time</Label>
-                        <DatePicker id='date' name='date' showTimeInput selected={eventDate} onChange={(date) => seteventDate(date)} />
+                        <Label htmlFor='date'>Date:</Label>
+                        <DatePickerField name='date' />
                         <ErrorMessage name='date' >
                                 {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage>
