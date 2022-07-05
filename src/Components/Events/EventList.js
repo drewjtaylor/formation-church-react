@@ -11,7 +11,7 @@ const EventList = () => {
             return <Card key={event.id}>
                 <CardBody>
                     <CardTitle>{event.title}</CardTitle>
-                    <CardSubtitle>Add date here later</CardSubtitle>
+                    <CardSubtitle>Date goes here</CardSubtitle>
                     <CardText>{event.description}</CardText>
                 </CardBody>
             </Card>

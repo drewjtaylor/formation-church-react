@@ -30,7 +30,7 @@ const AddEventForm = () => {
                 <Form>
                     <FormGroup>
                         <Label htmlFor='date'>Date:</Label>
-                        <DatePickerField name='date' className='form-control'/>
+                        <DatePickerField name='date' label='Click here to enter a date' className='form-control'/>
                         <ErrorMessage name='date' >
                                 {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage>
