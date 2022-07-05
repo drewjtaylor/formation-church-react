@@ -12,9 +12,7 @@ const eventsSlice = createSlice({
         addEvent: (state, action) => {
             const newEvent = {
                 id: state.eventsArray.length+1,
-                date: action.payload.date,
-                title: action.payload.title,
-                description: action.payload.description,
+                ...action.payload
             };
             state.eventsArray.push(newEvent);
         }
