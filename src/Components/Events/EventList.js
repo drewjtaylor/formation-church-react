@@ -9,13 +9,14 @@ const EventList = () => {
     return (
         allEvents.map((event) => {
             const displayDate = event.date.toDateString();
-            const displayTime = event.date.toLocaleTimeString();
+            const stringDisplayTime = event.date.toLocaleTimeString();
+            const displayTime = `${stringDisplayTime.slice(0, 5)} ${stringDisplayTime.slice(stringDisplayTime-2)}`
 
             return <Card key={event.id}>
                 <CardBody>
-                    <CardTitle>{event.title}</CardTitle>
-                    <CardSubtitle>{displayDate} {displayTime}</CardSubtitle>
-                    <CardText>{event.description}</CardText>
+                    <CardTitle className='eventcardTitle bg-primary text-light display-6'>{event.title}</CardTitle>
+                    <CardSubtitle className='eventcardSubtitle bg-primary text-light display-'>{displayDate}, {displayTime}</CardSubtitle>
+                    <CardText className='eventcardText bg-light'>{event.description}</CardText>
                 </CardBody>
             </Card>
         })

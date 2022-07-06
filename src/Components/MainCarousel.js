@@ -8,7 +8,7 @@ const MainCarousel = () => {
 
     return (
         <>
-            <Carousel fade controls={false} interval={150000} wrap={false}>
+            <Carousel fade controls={false} interval={2000} wrap={false} pause={false}>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
@@ -32,7 +32,6 @@ const MainCarousel = () => {
                     src={slideThree}
                     alt="Formation church"
                     />
-
                 </Carousel.Item>
             </Carousel>
         </>

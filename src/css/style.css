@@ -148,3 +148,19 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lemonada&family=Staatliches&display=swap');
+
+.eventcardTitle {
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.eventcardSubtitle {
+    padding: 10px;
+    
+}
+
+.eventcardText {
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}

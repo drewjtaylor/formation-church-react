@@ -49,11 +49,11 @@ const ChurchNavbar = () => {
                                             What We Believe
                                         </DropdownItem>
                                     </NavLink>
-                                    <NavLink className="nav-link" to='OurMission'>
+                                    {/* <NavLink className="nav-link" to='OurMission'>
                                         <DropdownItem>
                                             Our Mission
                                         </DropdownItem>
-                                    </NavLink>
+                                    </NavLink> */}
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         <UncontrolledDropdown nav inNavbar>
@@ -84,7 +84,7 @@ const ChurchNavbar = () => {
                             </DropdownToggle>
                             <DropdownMenu end>
                                 <DropdownItem>
-                                    <a href="https://formed-church.netlify.app/That-Man-Called-Jesus.pdf">Book Club Guide</a>
+                                    <a href="https://formed-church.netlify.app/That-Man-Called-Jesus.pdf" className='unstyled-link'>Download Book Club Guide</a>
                                 </DropdownItem>
                                 <DropdownItem>
                                     <a href="https://www.biblegateway.com/" className='unstyled-link' target='_blank' rel="noreferrer">Read the Bible Online</a>

@@ -19,6 +19,7 @@ const DatePickerField = (props) => {
                             selected={value}
                             onChange={val => setFieldValue(name, val)}
                             showTimeSelec
+                            showTimeSelect
                         />
                     }
                 }
