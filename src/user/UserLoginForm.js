@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setCurrentUser, selectCurrentUser } from './userSlice';
+import { setCurrentUser, selectCurrentUser, selectAllUsers } from './userSlice';
 import {
     Modal,
     ModalHeader,
@@ -16,20 +16,27 @@ const UserLoginForm = () => {
     const [loginModalOpen, setLoginModalOpen] = useState(false);
 
     const currentUser = useSelector(selectCurrentUser);
-
+    const existingUsers = useSelector(selectAllUsers);
+    
     const dispatch = useDispatch();
 
     const handleLogin = (values) => {
-        const currentUser = {
+        const loggingUser = {
             loginTime: Date.now(),
             username: values.username,
             password: values.password
         };
 
-        console.log("login submit fired")
+       const matchingUser = existingUsers.find((user) => user.username === values.username)
 
-        dispatch(setCurrentUser(currentUser));
-        setLoginModalOpen(false);
+        if (matchingUser) {console.log(matchingUser.username)}
+
+        if (matchingUser && matchingUser.username === values.username && matchingUser.password === values.password) {
+            dispatch(setCurrentUser(loggingUser));
+            setLoginModalOpen(false);
+        } else {
+            alert('There was a problem logging in. Please check for typos, or contact Wade Rininger if you should be added as staff.')
+        }
     };
 
     return (

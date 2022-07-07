@@ -1,4 +1,4 @@
-const demoUsers = [
+export const demoUsers = [
     {
         username: 'PastorFrank',
         password: 'password'

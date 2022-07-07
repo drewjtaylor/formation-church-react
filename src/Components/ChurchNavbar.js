@@ -95,7 +95,7 @@ const ChurchNavbar = () => {
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         </Nav>
-                        {/* <UserLoginForm /> */}
+                        <UserLoginForm />
                     </Collapse>
                 </Navbar>
         </>
