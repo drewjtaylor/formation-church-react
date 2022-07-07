@@ -9,7 +9,7 @@ const EventList = () => {
     sortedEvents.sort((a, b) => Number(a.date)-Number(b.date));  // Now we have "sortedEvents" to use, which is an array in date order
 
     return (
-        allEvents.map((event) => {
+        sortedEvents.map((event) => {
             const displayTime = event.date.toLocaleTimeString('en-us', {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit'});
             if ((new Date()) < event.date) {  // Only renders if the date is in the future
                 return <Card key={event.id}>
