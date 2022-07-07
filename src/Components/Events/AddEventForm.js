@@ -1,14 +1,12 @@
-import { useState } from 'react';
+
 import DatePickerField from './DatePickerField';
-import {useSelector, useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import {Formik, Field, Form, ErrorMessage} from 'formik';
-import { validateEventForm } from '../../utils/validateEventForm';
+// import { validateEventForm } from '../../utils/validateEventForm';
 import { Button, Label, FormGroup } from 'reactstrap';
 import {addEvent} from './eventSlice';
 
 const AddEventForm = () => {
-    const [eventDate, seteventDate] = useState(new Date())
-
     const dispatch = useDispatch();
 
     const handleEventSubmit = (values) => {
@@ -25,7 +23,6 @@ const AddEventForm = () => {
 
     return (
         <>
-            <p>If you would like to add an event, Fill out the date and title, add an optional description, then click "Add event to calendar"</p>
             <Formik initialValues={{}} onSubmit={handleEventSubmit} >
                 <Form>
                     <FormGroup>

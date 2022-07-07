@@ -14,10 +14,12 @@ const Events = () => {
             <h1 className="text-center">Welcome to the Church events page</h1>
             <h5 className="text-center mb-xxl-5">If you would like to add an event, please enter the information in the form on the right</h5>
                 <Row>
+                    <Col><h2>Upcoming events</h2></Col>
+                    <Col><h2>Add an Event</h2></Col>
+                </Row>
+                <Row>
                     <Col>
-                        <div>
-                            <EventList events={eventList}/>
-                        </div>
+                        <EventList events={eventList}/>
                     </Col>
                     <Col>
                         <AddEventForm />
