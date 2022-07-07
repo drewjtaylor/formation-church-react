@@ -11,7 +11,8 @@ const EventList = () => {
     return (
         sortedEvents.map((event) => {
             const displayTime = event.date.toLocaleTimeString('en-us', {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit'});
-            if ((new Date()) < event.date) {  // Only renders if the date is in the future
+            
+            if ((new Date()) < event.date) {
                 return <Card key={event.id}>
                     <CardBody>
                         <CardTitle className='eventcardTitle bg-primary text-light display-6'>{event.title}</CardTitle>

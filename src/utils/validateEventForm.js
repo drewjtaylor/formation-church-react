@@ -2,8 +2,8 @@ export const validateEventForm = (values) => {
     const {date, title} = values;
     const errors = {};
     
-    if (!date) {
-        errors.date = 'Required';
+    if (date < (new Date())) {
+        errors.date = 'Must be a future date';
     }
 
 

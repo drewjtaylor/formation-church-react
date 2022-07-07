@@ -5,6 +5,7 @@ import {Formik, Field, Form, ErrorMessage} from 'formik';
 // import { validateEventForm } from '../../utils/validateEventForm';
 import { Button, Label, FormGroup } from 'reactstrap';
 import {addEvent} from './eventSlice';
+import { validateEventForm } from '../../utils/validateEventForm';
 
 const AddEventForm = () => {
     const dispatch = useDispatch();
@@ -23,7 +24,13 @@ const AddEventForm = () => {
 
     return (
         <>
-            <Formik initialValues={{}} onSubmit={handleEventSubmit} >
+            <Formik 
+                initialValues={{
+                    date: undefined, 
+                    title: '', 
+                    description: ''}} 
+                onSubmit={handleEventSubmit} 
+                validate={validateEventForm}>
                 <Form>
                     <FormGroup>
                         <Label htmlFor='date'>Date:</Label>
@@ -35,6 +42,9 @@ const AddEventForm = () => {
                     <FormGroup>
                         <Label htmlFor='title'>Title</Label>
                         <Field id='title' name='title' placeholder='Give your event a title' className='form-control'></Field>
+                        <ErrorMessage name='title' >
+                                {(msg) => <p className='text-danger'>{msg}</p>}
+                        </ErrorMessage>
                     </FormGroup>
                     <FormGroup>
                         <Label htmlFor='description'>Description</Label>
