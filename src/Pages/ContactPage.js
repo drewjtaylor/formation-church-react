@@ -5,9 +5,8 @@ const ContactPage = () => {
     return <Container>
             <Row>
                 <Col>
-                    <h1>We want to connect with you!</h1>
-                    <p>If you would like us to contact you, please fill out the form below.</p>
-                    <p>We never share your information with anyone else.</p>
+                    <h1>Our contact page is under construction!</h1>
+                    <p>If you have any questions or would like to contact us, please reach out using our <a href="https://www.facebook.com/ourformationchurch/">facebook page</a>.</p>
                 </Col>
             </Row>
             {/* <ContactForm /> */}
