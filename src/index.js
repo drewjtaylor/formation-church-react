@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-social';
 import './css/style.css';
+import 'aos/dist/aos.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

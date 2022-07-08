@@ -4,7 +4,6 @@ import CardImgLeft from "../Components/CardImgLeft";
 import crossGreaterThan from '../img/cross-greater-than.png'
 import colorTampa from '../img/assist-tampa-600x401.jpg';
 import Aos from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 const HomePage = () => {
