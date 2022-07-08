@@ -24,7 +24,6 @@
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "react-spring": "^9.4.5",
     "reactstrap": "^9.1.1",
     "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
