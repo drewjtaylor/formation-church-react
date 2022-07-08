@@ -1,12 +1,19 @@
 import {Container, Col, Row} from 'reactstrap';
 import { Link } from 'react-browser-router';
+import GBCroadside from '../img/GBC-roadside.jpg'
 
 
 const ChurchGatheringsPage = () => {
     return <Container>
+        <Row className='my-5'>
+            <Col sm='8' className='mx-auto'>
+                <img src={GBCroadside} alt="Grace Brethren Church" className='img-fluid' />
+            </Col>
+        </Row>
         <Row>
             <Col>
-                <h2 className='text-center py-3'>Currently, we meet in the Grace Brethren Church building</h2>
+                <h2 className='text-center py-2'>Currently, our normal meeting place is in the Grace Brethren Church building</h2>
+                <hr />
             </Col>
         </Row>
         <Row>
@@ -17,7 +24,7 @@ const ChurchGatheringsPage = () => {
                 <br />
                 <Row><Col><h4>Meeting times:</h4></Col></Row>
                 <Row>
-                    <Col xs='3'>Sunday: </Col>
+                    <Col xs='3'>Every other Sunday: </Col>
                     <Col xs='9'>7:00 PM</Col>
                 </Row>
                 <Row>
