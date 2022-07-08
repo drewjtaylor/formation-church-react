@@ -36,13 +36,13 @@ const HomePage = () => {
     return (
         <>
             <MainCarousel />
-            <div data-aos="fade-up" data-aos-offset='500'>
+            <div data-aos="fade" data-aos-offset='500' data-aos-once={true}>
                 <CardImgLeft cardInfo={firstCard}/>
             </div>
-            <div data-aos="fade-up"  data-aos-offset='500'>
+            <div data-aos="fade" data-aos-offset='700' data-aos-once={true}>
                 <CardImgRight cardInfo={secondCard} />
             </div>
-            <div data-aos="fade-up"  data-aos-offset='500'>
+            <div data-aos="fade" data-aos-offset='500' data-aos-once={true}>
                 <CardImgLeft cardInfo={thirdCard} />
             </div>
         </>
