@@ -26,8 +26,6 @@ const HomePage = () => {
         textContent: '',
     }
 
-    sal();
-
     return (
         <>
             <MainCarousel />
