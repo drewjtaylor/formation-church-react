@@ -27,7 +27,7 @@ const ContactForm = () => {
                 <Form>
                     <FormGroup row>
                         <Label htmlFor='firstName' md='2'>First Name</Label>
-                        <Col md='10'>
+                        <Col md='4'>
                             <Field
                                 name='firstName'
                                 placeholder='First Name'
@@ -39,7 +39,7 @@ const ContactForm = () => {
                     </FormGroup>
                     <FormGroup row>
                         <Label htmlFor='lastName' md='2'>Last Name</Label>
-                        <Col md='10'>
+                        <Col md='4'>
                             <Field
                                 name='lastName'
                                 placeholder='Last Name'
@@ -52,7 +52,7 @@ const ContactForm = () => {
 
                     <FormGroup row>
                         <Label htmlFor='phoneNum' md='2'>Phone</Label>
-                        <Col md='10'>
+                        <Col md='4'>
                             <Field
                                 name='phoneNum'
                                 placeholder='Phone'
@@ -65,7 +65,7 @@ const ContactForm = () => {
 
                     <FormGroup row>
                         <Label htmlFor='email' md='2'>Email</Label>
-                        <Col md='10'>
+                        <Col md='4'>
                             <Field
                                 name='email'
                                 placeholder='Email'
@@ -75,29 +75,29 @@ const ContactForm = () => {
                             </ErrorMessage>
                         </Col>
                     </FormGroup>
-                    <FormGroup row>
-                        <Col md={{ size: 10, offset: 2 }}>
-                            <Button type='submit' color='primary'>
-                                Submit
-                            </Button>
-                        </Col>
-                    </FormGroup>
                     <FormGroup>
-                        <Col md={{ size: 10, offset: 2 }}>
+                        <Col md={{offset: 2 }}>
                             <Field type='checkbox' name='canEmail' className='me-2'/>
                             <Label htmlFor='canEmail'>I would like to receive emails</Label>
                         </Col>
                     </FormGroup>
                     <FormGroup>
-                        <Col md={{ size: 10, offset: 2 }}>
+                        <Col md={{offset: 2 }}>
                             <Field type='checkbox' name='canText' className='me-2'/>
                             <Label htmlFor='canText'>I would like to receive text messages</Label>
                         </Col>
                     </FormGroup>
                     <FormGroup>
-                        <Col md={{ size: 10, offset: 2 }}>
+                        <Col md={{offset: 2 }}>
                             <Field type='checkbox' name='canCall' className='me-2'/>
                             <Label htmlFor='canCall'>I would like to receive phone calls</Label>
+                        </Col>
+                    </FormGroup>
+                    <FormGroup row>
+                        <Col md={{ size: 10, offset: 2 }}>
+                            <Button type='submit' color='primary'>
+                                Submit
+                            </Button>
                         </Col>
                     </FormGroup>
                 </Form>
