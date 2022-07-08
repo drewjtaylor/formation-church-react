@@ -7,8 +7,11 @@ import Aos from 'aos';
 import { useEffect } from "react";
 
 const HomePage = () => {
+    
     useEffect(() => {
-        Aos.init({});
+        Aos.init({
+            
+        });
     }, [])
     
     const firstCard = {
@@ -35,13 +38,13 @@ const HomePage = () => {
     return (
         <>
             <MainCarousel />
-            <div data-aos="fade" data-aos-offset='500' data-aos-once={true}>
+            <div data-aos="fade" data-aos-offset='500' data-aos-once={true} data-aos-duration='1500'>
                 <CardImgLeft cardInfo={firstCard}/>
             </div>
-            <div data-aos="fade" data-aos-offset='700' data-aos-once={true}>
+            <div data-aos="fade" data-aos-offset='700' data-aos-once={true} data-aos-duration='1500'>
                 <CardImgRight cardInfo={secondCard} />
             </div>
-            <div data-aos="fade" data-aos-offset='500' data-aos-once={true}>
+            <div data-aos="fade" data-aos-offset='500' data-aos-once={true} data-aos-duration='1500'>
                 <CardImgLeft cardInfo={thirdCard} />
             </div>
         </>
