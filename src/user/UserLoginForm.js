@@ -35,7 +35,7 @@ const UserLoginForm = () => {
             dispatch(setCurrentUser(loggingUser));
             setLoginModalOpen(false);
         } else {
-            alert('There was a problem logging in. Please check for typos, or contact Wade Rininger if you should be added as staff.')
+            alert('There was a problem logging in. Please check for typos, or contact an administrator if you should be added as staff.')
         }
     };
 
@@ -43,12 +43,12 @@ const UserLoginForm = () => {
         <>
             <span className='navbar-text ms-auto'>
                 {currentUser ? (
-                    <div style={{width: '4rem', height: '4rem'}}>
+                    <div>
                         Welcome {currentUser.username}!
                     </div>
                 ) : (
-                    <Button outline onClick={() => setLoginModalOpen(true)} style={{ color: 'white', border: '1px solid white'}}>
-                        <i className='fa fa-sign-in fa-lg' /> Login
+                    <Button outline onClick={() => setLoginModalOpen(true)} style={{ color: 'white', border: '1px solid white rounded', background: 'black'}}>
+                        Staff Login
                     </Button>
                 )}
             </span>
