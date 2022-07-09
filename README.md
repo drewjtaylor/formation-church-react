@@ -14,57 +14,24 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### React upgrades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This site is mainly meant to be an improvement over teh "Bootstrap only" version, as well as an opportunity to exercise some React muscles and make something interactive.
 
-### `npm run build`
+### Events page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The "Events" page is the main React feature I added.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Currently it begins by populating with a list of demo events. Then, a new event can be added using the form on the right. (Eventually this will be blocked depending on whether or not a valid user is successfully logged in. In other words, random peopple shouldn't be able to add events--only church staff.)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+There is logic inside of "eventSlice" that connects events to the Redux store. Eventually this would need to be connected to an outside database, but for now it operates just using the store.
 
-### `npm run eject`
+As far as displaying upcoming events, any events with a date before today will not show up.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The event form should validate whether or not an event is in the future, and whether or not it has a title. An appropriate error message will pop up if these conditions are not satisfied, and the form will not be submitted.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Login functionality
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For now the "Staff Login" button at the top right measures the user inputs against a temporary "dummy" list. If the user is found in the list, they are signed in. Otherwise, an alert pops up advising the username/password was invalid, and they should contact admin if they believe they should be added as staff.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Eventually this would change whether or not the user has access to certain elements--such as adding an event. The general public should not be able to add events, for example.
