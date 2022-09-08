@@ -14,9 +14,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### React upgrades
+### React upgrades compared to original "bootstrap-only" version
 
-This site is mainly meant to be an improvement over teh "Bootstrap only" version, as well as an opportunity to exercise some React muscles and make something interactive.
+This site is mainly meant to be an improvement over the "Bootstrap only" version, as well as an opportunity to exercise some React muscles and make something interactive.
 
 ### Events page
 
@@ -34,4 +34,8 @@ The event form should validate whether or not an event is in the future, and whe
 
 For now the "Staff Login" button at the top right measures the user inputs against a temporary "dummy" list. If the user is found in the list, they are signed in. Otherwise, an alert pops up advising the username/password was invalid, and they should contact admin if they believe they should be added as staff.
 
-Eventually this would change whether or not the user has access to certain elements--such as adding an event. The general public should not be able to add events, for example.
+Eventually this would change whether or not the user has access to certain elements--such as adding an event.
+
+### Future changes
+
+The biggest flaw here is that this project is all front-end. Any connections to a database are essentially theoretical at this point. It should be very doable, but one of my future projects is to host a node server with MongoDB, and actually set up a database to track events and users.
