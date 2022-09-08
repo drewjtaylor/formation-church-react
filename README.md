@@ -26,9 +26,11 @@ Currently it begins by populating with a list of demo events. Then, a new event 
 
 There is logic inside of "eventSlice" that connects events to the Redux store. Eventually this would need to be connected to an outside database, but for now it operates just using the store.
 
-As far as displaying upcoming events, any events with a date before today will not show up.
+For a better user-experience, any events with a date before the current date will not show up.
 
 The event form should validate whether or not an event is in the future, and whether or not it has a title. An appropriate error message will pop up if these conditions are not satisfied, and the form will not be submitted.
+
+Once an event is submitted, the list will update accordingly, displaying all future events in date order.
 
 ### Login functionality
 
