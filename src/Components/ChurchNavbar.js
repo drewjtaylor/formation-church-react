@@ -18,7 +18,7 @@ import UserLoginForm from '../user/UserLoginForm';
 const ChurchNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
-        setIsOpen(!isOpen)
+        setIsOpen(isOpen => !isOpen)
     };
 
     return (
